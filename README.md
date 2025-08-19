@@ -4,7 +4,9 @@ This repository contains the work of Team Oaklabs, developed for the WRO 2025 Fu
 
 ### Members:
 Supratiik Koppuravuri
+
 Aneesh Kulkarni
+
 Krishna Hanumanthu
 
 ## Project/bot description :
@@ -15,7 +17,7 @@ The Arduino Uno handles real-time actuation, low-latency sensor processing, and 
 
 The Raspberry Pi 5 performs high-level decision-making, camera-based vision processing, and computationally intensive tasks.
 
-##Key hardware components include:
+## Key hardware components include:
 
 Arduino subsystem: motor driver shield, brushed DC motor, high-torque servo motor, 2 × HC-SR04 ultrasonic sensors.
 
@@ -23,7 +25,7 @@ Raspberry Pi subsystem: wide-angle camera module, 1 × ultrasonic sensor for red
 
 The robot is capable of obstacle detection, vision-based navigation, line pattern recognition, and a parallel parking maneuver. By combining camera data with ultrasonic readings, the system achieves reliable sensor fusion and fast decision-making.
 
-##Table of contents :
+## Table of contents :
 
 team-photos : photos of each team member (formal & informal)
 
@@ -41,7 +43,7 @@ TeamCode : complete codebase with explanations for each competition phase
 
 videos : demonstration of the robot performing different tasks
 
-##Introduction
+## Introduction
 
 Team Oaklabs proudly presents its robot for the World Robot Olympiad 2025 (Future Engineers).
 
