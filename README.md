@@ -1,21 +1,62 @@
-# WRO-2025-Oaklabs
-Our team, Oaklabs, has developed a robot for the WRO 2025 Future Engineers competition that combines practical simplicity with advanced technical systems. The design focuses on high efficiency, reliable performance, and adaptability to different competition phases. Every subsystem has been carefully chosen and configured to work together, ensuring that the robot can carry out each stage of the challenge with precision and consistency.
+Oak-Labs
 
-The control architecture is based on a distributed system using two microcontrollers: an Arduino Uno and a Raspberry Pi 5. This structure allows the workload to be divided so that each device focuses on the tasks it performs best. The Arduino is dedicated to real-time actuation and low-latency sensor processing, while the Raspberry Pi handles high-level decision-making, camera-based vision processing, and computationally intensive tasks. By separating these responsibilities, we reduce processing delays and ensure that the robot can execute movements quickly in response to its environment.
+This repository contains the work of Team Oaklabs, developed for the WRO 2025 Future Engineers competition. Our robot combines simplicity with advanced technical systems to ensure efficiency, reliability, and adaptability across all phases of the challenge.
 
-#HOW IT WORKS
-The Arduino subsystem is equipped with a motor driver shield, which controls a brushed DC motor for forward and reverse motion and a high-torque servo motor for angular adjustments. These components allow for smooth locomotion and precise steering corrections. Two HC-SR04 ultrasonic range sensors are connected to the Arduino’s digital pins, providing continuous measurements of distances from field boundaries. A lightweight algorithm processes the readings at a high polling rate, enabling the robot to maintain a safe offset from the edges and avoid unintentional collisions.
+Members:
+Supratiik Koppuravuri
+Aneesh Kulkarni
+Krishna Hanumanthu
 
-The Raspberry Pi 5 subsystem includes a wide-angle camera module for vision-based navigation and an additional ultrasonic sensor for obstacle detection redundancy. The camera captures live video input, which is processed using Python and the OpenCV library. These programs are capable of performing tasks such as color recognition, block detection, and line pattern analysis. The extra ultrasonic sensor works in combination with the camera data to increase obstacle detection accuracy, especially in conditions where the camera might have limited visibility.
+Project/bot description :
 
-A key feature of our design is the wired serial communication protocol between the Raspberry Pi and Arduino. We implemented a synchronous, variable-based system that transmits control signals with minimal latency. This ensures that high-level perception data from the Raspberry Pi is converted into movement commands on the Arduino almost instantly. The protocol is designed to be deterministic, meaning that each transmitted variable results in a predictable, pre-defined action.
+Our robot is designed around a distributed control system that uses two microcontrollers: an Arduino Uno and a Raspberry Pi 5.
 
-The operational logic changes depending on the competition phase. During obstacle navigation, the Raspberry Pi uses its ultrasonic sensor to check for objects within a 5 cm range. If an obstacle is detected, the camera identifies its color. A red block triggers the Raspberry Pi to send the variable “R” to the Arduino, which rotates the servo motor 50 degrees to the right to bypass the object. A green block triggers the variable “L,” causing a 50-degree left turn. This approach allows the robot to adapt its movement based on obstacle type and position while keeping responses fast and consistent.
+The Arduino Uno handles real-time actuation, low-latency sensor processing, and precise motor control.
 
-In the open challenge phase, where static obstacles are not present, the navigation system switches to line-based guidance. The camera scans the floor for sequences of blue and orange lines. A blue–orange sequence signals the Raspberry Pi to send the variable “C” to the Arduino, initiating a clockwise turn. An orange–blue sequence triggers the variable “A” for a counterclockwise turn. This method reduces unnecessary sensor usage during this phase, improving computational efficiency.
+The Raspberry Pi 5 performs high-level decision-making, camera-based vision processing, and computationally intensive tasks.
 
-The final phase is the parallel parking task. The Raspberry Pi counts the number of blue and orange lines detected during navigation. Twelve detections of each color indicate that three laps have been completed. At this point, the Raspberry Pi waits for a pink field marking. When it is detected, the Pi sends the variable “P” to the Arduino, which executes a pre-programmed parallel parking maneuver to position the robot accurately within the designated area.
+Key hardware components include:
 
-This design approach offers several advantages. The distributed control system ensures that both time-sensitive motor control and processor-intensive vision tasks run simultaneously without interfering with each other. Sensor fusion — combining camera and ultrasonic data — provides more reliable detection than using a single sensing method. The communication protocol between the microcontrollers is minimalistic yet highly effective, reducing the chance of data loss or transmission errors during competition.
+Arduino subsystem: motor driver shield, brushed DC motor, high-torque servo motor, 2 × HC-SR04 ultrasonic sensors.
 
-Overall, our solution for the WRO 2025 Future Engineers competition reflects a careful balance between complexity and practicality. The robot’s systems are modular, meaning that components can be replaced or upgraded without redesigning the entire structure. This not only improves reliability but also makes it easier to troubleshoot and adapt to changing competition requirements. The combination of dual microcontrollers, optimized algorithms, and well-integrated sensors enables our robot to perform with both speed and accuracy, making it well-suited for the diverse challenges of the event.
+Raspberry Pi subsystem: wide-angle camera module, 1 × ultrasonic sensor for redundancy.
+
+The robot is capable of obstacle detection, vision-based navigation, line pattern recognition, and a parallel parking maneuver. By combining camera data with ultrasonic readings, the system achieves reliable sensor fusion and fast decision-making.
+
+Table of contents :
+
+team-photos : photos of each team member (formal & informal)
+
+bot-photos : multiple views of the robot (front, back, left, right, top, bottom)
+
+diagrams and schemes : visual representations of system architecture, wiring, and component interconnections
+
+materials and components : detailed list of all hardware and electronics used
+
+3D models : CAD designs and animations of the robot build
+
+reference documents : reports/manuals covering design decisions and logistics
+
+TeamCode : complete codebase with explanations for each competition phase
+
+videos : demonstration of the robot performing different tasks
+
+Introduction
+
+Team Oaklabs proudly presents its robot for the World Robot Olympiad 2025 (Future Engineers).
+
+Our design philosophy emphasizes efficiency, precision, and modularity. By distributing responsibilities between the Arduino and Raspberry Pi, the robot executes movements with speed while simultaneously processing complex vision-based tasks.
+
+Highlights of our approach:
+
+Distributed architecture: separates time-critical motor control from computationally heavy tasks.
+
+Sensor fusion: combines ultrasonic data with camera vision for robust navigation.
+
+Adaptive behavior: the robot dynamically switches strategies between obstacle navigation, line-following, and parallel parking.
+
+Deterministic communication protocol: ensures that commands from the Raspberry Pi to the Arduino translate into predictable actions.
+
+Modularity: components can be easily replaced or upgraded, making the system flexible and competition-ready.
+
+By balancing advanced algorithms with practical engineering, Oaklabs has built a robot capable of tackling every stage of the competition with speed, consistency, and adaptability.
