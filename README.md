@@ -1,13 +1,13 @@
-#Oak-Labs
+# Oak-Labs
 
 This repository contains the work of Team Oaklabs, developed for the WRO 2025 Future Engineers competition. Our robot combines simplicity with advanced technical systems to ensure efficiency, reliability, and adaptability across all phases of the challenge.
 
-###Members:
+### Members:
 Supratiik Koppuravuri
 Aneesh Kulkarni
 Krishna Hanumanthu
 
-##Project/bot description :
+## Project/bot description :
 
 Our robot is designed around a distributed control system that uses two microcontrollers: an Arduino Uno and a Raspberry Pi 5.
 
