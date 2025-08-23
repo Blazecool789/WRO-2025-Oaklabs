@@ -3,11 +3,11 @@
 This repository contains the work of Team Oaklabs, developed for the WRO 2025 Future Engineers competition. Our robot combines simplicity with advanced technical systems to ensure efficiency, reliability, and adaptability across all phases of the challenge.
 
 ### Members:
-Supratiik Koppuravuri
+ - Supratiik Koppuravuri
 
-Aneesh Kulkarni
+ - Aneesh Kulkarni
 
-Krishna Hanumanthu
+ - Krishna Hanumanthu
 
 ## Project/bot description :
 
@@ -16,14 +16,6 @@ Our robot is designed around a distributed control system that uses two microcon
 The Arduino Uno handles real-time actuation, low-latency sensor processing, and precise motor control.
 
 The Raspberry Pi 5 performs high-level decision-making, camera-based vision processing, and computationally intensive tasks.
-
-## Key hardware components include:
-
-Arduino subsystem: motor driver shield, brushed DC motor, high-torque servo motor, 2 × HC-SR04 ultrasonic sensors.
-
-Raspberry Pi subsystem: wide-angle camera module, 1 × ultrasonic sensor for redundancy.
-
-The robot is capable of obstacle detection, vision-based navigation, line pattern recognition, and a parallel parking maneuver. By combining camera data with ultrasonic readings, the system achieves reliable sensor fusion and fast decision-making.
 
 ## Table of contents :
 
