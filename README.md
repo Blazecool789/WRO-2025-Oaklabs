@@ -19,21 +19,21 @@ The Raspberry Pi 5 performs high-level decision-making, camera-based vision proc
 
 ## Table of contents :
 
-team-photos : photos of each team member (formal & informal)
+Team-photos : Photos of each team member (formal & informal)
 
-bot-photos : multiple views of the robot (front, back, left, right, top, bottom)
+Bot-photos : Multiple views of the robot (front, back, left, right, top, bottom)
 
-diagrams and schemes : visual representations of system architecture, wiring, and component interconnections
+Diagrams and schemes : Visual representations of system architecture, wiring, and component interconnections
 
-materials and components : detailed list of all hardware and electronics used
+Materials and components : Detailed list of all hardware and electronics used
 
 3D models : CAD designs and animations of the robot build
 
-reference documents : reports/manuals covering design decisions and logistics
+Reference documents : Reports/manuals covering design decisions and logistics
 
-TeamCode : complete codebase with explanations for each competition phase
+TeamCode : Complete codebase with explanations for each competition phase
 
-videos : demonstration of the robot performing different tasks
+Videos : Demonstration of the robot performing different tasks
 
 ## Introduction
 
