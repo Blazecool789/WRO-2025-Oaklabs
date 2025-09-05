@@ -1,1 +1,20 @@
+Components used in the Arduino Part of the Robot:
+
+i. Arduino UNO R3 x 1  
+ii. L293D motor driver x 1
+iii. Ultrasonic Sensors x 2
+iv. DC motor x 1
+v. Servo Motor x 1
+vi. Jumper Wires x 13
+vii.11.1volt Battery x 1
+viii. Switch x 1 
+
+Components Used in Raspberry PI 
+
+i. Raspberry Pi 5 x 1
+ii. Ultrasonic Sensors x 1
+iii. Wide Angle Camera x 2
+iv. Jumper Wires x 4
+v. Resistors x 2
+vi. Powerbank x 1
 
